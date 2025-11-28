@@ -15,31 +15,24 @@ import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
-
 public class AdminLoginPage {
     public AdminLoginPage() {
         JFrame frame = new JFrame("Admin Login");
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Color burgundy = new Color(128, 0, 32);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(255, 240, 245);
-        Color pinkText = new Color(255, 105, 180);
+        Color backgroundColor = new Color(245, 233, 211); 
         Color whiteText = new Color(255, 255, 255);
-        Color lightPinkBox = new Color(255, 105, 180);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setBackground(backgroundColor);
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\userr\\Downloads\\photo_2025-03-01_05-44-16.jpg");
-        Image scaledImage = logoIcon.getImage().getScaledInstance(250, 250, Image.SCALE_SMOOTH);
-        JLabel logoLabel = new JLabel(new ImageIcon(scaledImage));
-        logoLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-
         JLabel titleLabel = new JLabel("Admin Access Panel");
         titleLabel.setFont(new Font("Times New Roman", Font.BOLD, 40));
-        titleLabel.setForeground(pinkText);
+        titleLabel.setForeground(burgundy);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel formPanel = new JPanel();
@@ -50,12 +43,12 @@ public class AdminLoginPage {
 
         JLabel emailLabel = new JLabel("Admin Email:");
         emailLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        emailLabel.setForeground(pinkText);
+        emailLabel.setForeground(burgundy);
         JTextField emailField = new JTextField();
 
         JLabel passwordLabel = new JLabel("Password:");
         passwordLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        passwordLabel.setForeground(pinkText);
+        passwordLabel.setForeground(burgundy);
         JPasswordField passwordField = new JPasswordField();
 
         formPanel.add(emailLabel);
@@ -65,7 +58,7 @@ public class AdminLoginPage {
 
         JButton loginButton = new JButton("Login in");
         loginButton.setFont(new Font("Times New Roman", Font.BOLD, 20));
-        loginButton.setBackground(lightPinkBox);
+        loginButton.setBackground(burgundy);
         loginButton.setForeground(whiteText);
         loginButton.setMaximumSize(new Dimension(120, 40));
         loginButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -76,8 +69,8 @@ public class AdminLoginPage {
 
             UIManager.put("OptionPane.background", backgroundColor);
             UIManager.put("Panel.background", backgroundColor);
-            UIManager.put("OptionPane.messageForeground", pinkText);
-            UIManager.put("Button.background", lightPinkBox);
+            UIManager.put("OptionPane.messageForeground", burgundy);
+            UIManager.put("Button.background", burgundy);
             UIManager.put("Button.foreground", whiteText);
             UIManager.put("OptionPane.messageFont", new Font("Times New Roman", Font.BOLD, 18));
 
@@ -94,7 +87,6 @@ public class AdminLoginPage {
         });
 
         mainPanel.add(Box.createVerticalStrut(55));
-        mainPanel.add(logoLabel);
         mainPanel.add(Box.createVerticalStrut(40));
         mainPanel.add(titleLabel);
         mainPanel.add(Box.createVerticalStrut(50));
@@ -145,4 +137,5 @@ public class AdminLoginPage {
         new AdminLoginPage();
     }
 }
+
 
