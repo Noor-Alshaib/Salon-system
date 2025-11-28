@@ -3,43 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/appointmentManagement.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/PaymentPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/Homepage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ViewCustomersPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/SignUpPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/salonDB.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/User.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/NailService.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/Dashboard.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/custDB.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AppointmentScheduler.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AddAppointmentPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/DeleteAppointmentsPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/SignIn33.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/MyAppointment2.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ReviewWindow.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/DataBase.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/HairService.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/NailServicesPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/CancelAppointment.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ModifyAppointment2.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/Appointment.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AdminDB.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/userDB.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/Admin.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AppointmentDAO.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ServiceItem.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ViewAppointmentsPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ResetPassword.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/LoginPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ServiceDB.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/DBConnection.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AdminHomePage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/AdminLoginPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/HairServicesPage.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/Appointment2.java</file>
-            <file>file:/C:/Users/ebtes/Downloads/Appointment2/Appointment2/SalonMmmm/Appointment2/src/appointment2/ServicesCatalog.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/Homepage.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/custDB.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/salonDB.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/userDB.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/ServiceDB.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/AdminDB.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/DataBase.java</file>
+            <file>file:/C:/Users/N/OneDrive/Documents/NetBeansProjects/Appointment2/src/appointment2/DBConnection.java</file>
         </group>
     </open-files>
 </project-private>
