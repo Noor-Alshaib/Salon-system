@@ -21,24 +21,18 @@ public class Homepage {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(255, 240, 245);
-        Color pinkText = new Color(255, 105, 180);
+        Color backgroundColor = new Color(245, 233, 211);
+        Color burgundy = new Color(128, 0, 32);
         Color whiteText = new Color(255, 255, 255);
-        Color lightPinkBox = new Color(255, 105, 180);
 
         JPanel mainPanel = new JPanel(null);
         mainPanel.setBackground(backgroundColor);
 
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\userr\\Downloads\\photo_2025-03-01_05-44-16.jpg");
-        Image scaledImage = logoIcon.getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH);
-        JLabel logoLabel = new JLabel(new ImageIcon(scaledImage));
-        logoLabel.setBounds(200, 200, 400, 400);
-
         JLabel welcomeLabel = new JLabel("WELCOME TO BEAUTY SALON!");
         welcomeLabel.setFont(new Font("Times New Roman", Font.BOLD, 45));
-        welcomeLabel.setForeground(pinkText);
-        welcomeLabel.setBounds(700, 350, 800, 50);
-
+        welcomeLabel.setForeground(burgundy);
+        welcomeLabel.setBounds(400, 350, 800, 50);
+        
         JButton signUpButton = new JButton("Sign up");
         JButton loginButton = new JButton("Log in");
         JButton adminLoginButton = new JButton("Admin Login");
@@ -47,13 +41,13 @@ public class Homepage {
         loginButton.setFont(new Font("Times New Roman", Font.BOLD, 23));
         adminLoginButton.setFont(new Font("Times New Roman", Font.BOLD, 21));
 
-        signUpButton.setBounds(800, 450, 120, 40);
-        loginButton.setBounds(1000, 450, 120, 40);
-        adminLoginButton.setBounds(1200, 450, 160, 40);
+        signUpButton.setBounds(480, 450, 120, 40);
+        loginButton.setBounds(680, 450, 120, 40);
+        adminLoginButton.setBounds(880, 450, 160, 40);
 
-        signUpButton.setBackground(lightPinkBox);
-        loginButton.setBackground(lightPinkBox);
-        adminLoginButton.setBackground(lightPinkBox);
+        signUpButton.setBackground(burgundy);
+        loginButton.setBackground(burgundy);
+        adminLoginButton.setBackground(burgundy);
 
         signUpButton.setForeground(whiteText);
         loginButton.setForeground(whiteText);
@@ -87,8 +81,6 @@ public class Homepage {
             frame.dispose();
             new AdminLoginPage();
         });
-
-        mainPanel.add(logoLabel);
         mainPanel.add(welcomeLabel);
         mainPanel.add(signUpButton);
         mainPanel.add(loginButton);
