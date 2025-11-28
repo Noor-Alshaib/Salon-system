@@ -23,10 +23,9 @@ public class LoginPage {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(255, 240, 245);
-        Color pinkText = new Color(255, 105, 180);
+        Color backgroundColor = new Color(245, 233, 211);
         Color whiteText = new Color(255, 255, 255);
-        Color lightPinkBox = new Color(255, 105, 180);
+        Color burgundy = new Color(128, 0, 32);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setBackground(backgroundColor);
@@ -39,7 +38,7 @@ public class LoginPage {
 
         JLabel titleLabel = new JLabel("Glow Starts Here");
         titleLabel.setFont(new Font("Times New Roman", Font.BOLD, 40));
-        titleLabel.setForeground(pinkText);
+        titleLabel.setForeground(burgundy);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel formPanel = new JPanel();
@@ -50,12 +49,12 @@ public class LoginPage {
 
         JLabel emailLabel = new JLabel("Email:");
         emailLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        emailLabel.setForeground(pinkText);
+        emailLabel.setForeground(burgundy);
         JTextField emailField = new JTextField();
 
         JLabel passwordLabel = new JLabel("Password:");
         passwordLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        passwordLabel.setForeground(pinkText);
+        passwordLabel.setForeground(burgundy);
         JPasswordField passwordField = new JPasswordField();
 
         formPanel.add(emailLabel);
@@ -65,7 +64,7 @@ public class LoginPage {
 
         JButton loginButton = new JButton("Log in");
         loginButton.setFont(new Font("Times New Roman", Font.BOLD, 20));
-        loginButton.setBackground(lightPinkBox);
+        loginButton.setBackground(burgundy);
         loginButton.setForeground(whiteText);
         loginButton.setMaximumSize(new Dimension(120, 40));
         loginButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -76,8 +75,8 @@ public class LoginPage {
 
             UIManager.put("OptionPane.background", backgroundColor);
             UIManager.put("Panel.background", backgroundColor);
-            UIManager.put("OptionPane.messageForeground", pinkText);
-            UIManager.put("Button.background", lightPinkBox);
+            UIManager.put("OptionPane.messageForeground", burgundy);
+            UIManager.put("Button.background", burgundy);
             UIManager.put("Button.foreground", whiteText);
             UIManager.put("OptionPane.messageFont", new Font("Times New Roman", Font.BOLD, 18));
 
