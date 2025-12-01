@@ -19,11 +19,11 @@ public class AddAppointmentPage extends JFrame {
     private JComboBox<String> serviceComboBox;
     private HashMap<String, Integer> serviceMap = new HashMap<>();
 
-    public AddAppointmentPage() {
+      public AddAppointmentPage() {
         setTitle("Add New Appointment");
         setSize(500, 400);
         setLocationRelativeTo(null);
-        getContentPane().setBackground(new Color(255, 240, 245));
+        getContentPane().setBackground(new Color(245, 233, 211));
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -89,7 +89,7 @@ public class AddAppointmentPage extends JFrame {
         
         gbc.gridx = 0; gbc.gridy = 4; gbc.gridwidth = 2;
         JButton saveButton = new JButton("Save Appointment");
-        saveButton.setBackground(new Color(255, 105, 180));
+        saveButton.setBackground(new Color(128, 0, 32));
         saveButton.setForeground(Color.WHITE);
         saveButton.setFont(new Font("Arial", Font.BOLD, 16));
         saveButton.setPreferredSize(new Dimension(250, 40));
@@ -160,3 +160,4 @@ public class AddAppointmentPage extends JFrame {
         });
     }
 }
+
