@@ -11,15 +11,16 @@ package appointment2;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class AdminHomePage extends JFrame {
 
 
-    private final Color backgroundColor = new Color(255, 240, 245); 
-    private final Color pinkText = new Color(255, 105, 180);         
-    private final Color whiteText = new Color(255, 255, 255);        
-    private final Color lightPinkBox = new Color(255, 105, 180);     
+    private final Color backgroundColor = new Color(245, 233, 211); 
+    private final Color whiteText = new Color(255, 255, 255);  
+    Color burgundy = new Color(128, 0, 32);
 
- setTitle("Beauty Salon - Admin Home");
+    public AdminHomePage() {
+        setTitle("Beauty Salon - Admin Home");
         setSize(900, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -27,7 +28,7 @@ public class AdminHomePage extends JFrame {
         setLayout(new BorderLayout());
         setExtendedState(JFrame.MAXIMIZED_BOTH);
 
- 
+        
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setBackground(backgroundColor);
 
