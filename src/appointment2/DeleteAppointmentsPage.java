@@ -19,4 +19,12 @@ public class DeleteAppointmentsPage extends JFrame {
     private DefaultTableModel model;
 
     public DeleteAppointmentsPage() {
+         setTitle("Delete Appointments");
+        setSize(800, 400);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        getContentPane().setBackground(new Color(245, 233, 211));
+
+        model = new DefaultTableModel(new String[]{"ID", "Customer Email", "Date", "Time", "Service"}, 0);
+        table = new JTable(model);
  
