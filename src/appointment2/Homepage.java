@@ -10,6 +10,7 @@ import java.awt.*;
  *
  * @author Renaa
  */
+// new line after commit !!!
 public class Homepage {
     public static void main(String[] args) {
         new Homepage();
