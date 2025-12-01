@@ -20,10 +20,9 @@ public class SignUpPage {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(255, 240, 245);
-        Color pinkText = new Color(255, 105, 180);
+        Color backgroundColor = new Color(245, 233, 211);
+        Color burgundy = new Color(128, 0, 32);
         Color whiteText = new Color(255, 255, 255);
-        Color lightPinkBox = new Color(255, 105, 180);
 
         JPanel panel = new JPanel();
         panel.setBackground(backgroundColor);
@@ -31,7 +30,7 @@ public class SignUpPage {
 
         JLabel titleLabel = new JLabel("Create New Account");
         titleLabel.setFont(new Font("Times New Roman", Font.BOLD, 32));
-        titleLabel.setForeground(pinkText);
+        titleLabel.setForeground(burgundy);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel formPanel = new JPanel(new GridLayout(4, 2, 10, 20));
@@ -55,7 +54,7 @@ public class SignUpPage {
 
         JButton registerButton = new JButton("Sign Up");
         registerButton.setFont(new Font("Times New Roman", Font.BOLD, 20));
-        registerButton.setBackground(lightPinkBox);
+        registerButton.setBackground(burgundy);
         registerButton.setForeground(whiteText);
         registerButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         registerButton.setMaximumSize(new Dimension(150, 40));
