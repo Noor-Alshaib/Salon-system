@@ -30,8 +30,8 @@ public class Dashboard extends JFrame {
 
     private final JTextArea appointmentsArea = new JTextArea();
     private final List<Appointment2> appointments = new ArrayList<>();
-    private static final Color BACKGROUND_COLOR = new Color(255, 240, 245);
-    private static final Color PINK = new Color(255, 105, 180);
+    private static final Color BACKGROUND_COLOR = new Color(245, 233, 211);
+    private static final Color burgundy =  new Color(128, 0, 32);
     private static final Color WHITE = Color.WHITE;
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/salonsystem";
@@ -122,7 +122,7 @@ public class Dashboard extends JFrame {
         updateAppointmentsDisplay();
         JButton refreshButton = new JButton("Refresh Appointments");
         refreshButton.setFont(new Font("Arial", Font.PLAIN, 14));
-        refreshButton.setForeground(PINK);
+        refreshButton.setForeground(burgundy);
         refreshButton.setBackground(Color.WHITE);
         refreshButton.setFocusPainted(false);
         refreshButton.addActionListener(e -> updateAppointmentsDisplay());
@@ -181,7 +181,7 @@ public class Dashboard extends JFrame {
     private JPanel createStyledPanel(String title) {
         JPanel panel = new JPanel();
         panel.setBackground(BACKGROUND_COLOR);
-        panel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(PINK), title));
+        panel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(burgundy), title));
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         return panel;
     }
@@ -189,15 +189,15 @@ public class Dashboard extends JFrame {
     private JPanel createTitledPanel(String title) {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBackground(BACKGROUND_COLOR);
-        panel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(PINK), title));
+        panel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(burgundy), title));
         return panel;
     }
 
     private JButton createStyledButton(String text, java.awt.event.ActionListener action) {
         JButton button = new JButton(text);
         button.setFont(new Font("Arial", Font.PLAIN, 16));
-        button.setForeground(PINK);
-        button.setBackground(new Color(255,220,235)); 
+        button.setForeground(burgundy);
+        button.setBackground(new Color(245,233,211)); 
         button.setContentAreaFilled(true);
         button.setOpaque(true);
         button.setPreferredSize(new Dimension(250, 45));
@@ -211,13 +211,13 @@ public class Dashboard extends JFrame {
         card.setLayout(new BoxLayout(card, BoxLayout.Y_AXIS));
         card.setBackground(WHITE);
         card.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(PINK),
+                BorderFactory.createLineBorder(burgundy),
                 BorderFactory.createEmptyBorder(10, 10, 10, 10)
         ));
 
         JLabel titleLabel = new JLabel(title);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 13));
-        titleLabel.setForeground(new Color(102, 0, 102));
+        titleLabel.setForeground(new Color(128, 0, 32));
 
         JLabel descLabel = new JLabel("<html><p style='width:180px'>" + description + "</p></html>");
         descLabel.setFont(new Font("Arial", Font.PLAIN, 12));
