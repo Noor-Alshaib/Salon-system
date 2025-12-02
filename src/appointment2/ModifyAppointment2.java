@@ -47,7 +47,7 @@ public class ModifyAppointment2 extends javax.swing.JFrame {
         JLabel logoLabel = new JLabel(resizedLogo, SwingConstants.CENTER);
         
    
-        getContentPane().setBackground(new Color(255, 240, 245));
+        getContentPane().setBackground(new Color(245, 233, 211));
         setExtendedState(MAXIMIZED_BOTH);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -66,7 +66,7 @@ backButton.addActionListener(e -> {
     initComponents();
     
     //getContentPane().add(jPanel1, BorderLayout.CENTER);
-    getContentPane().setBackground(new Color(255, 240, 245));
+    getContentPane().setBackground(new Color(245, 233, 211));
     setExtendedState(MAXIMIZED_BOTH);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setResizable(false);
@@ -116,43 +116,43 @@ backButton.addActionListener(e -> {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 240, 245));
+        jPanel1.setBackground(new java.awt.Color(245, 233, 211));
         
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 40)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 105, 180));
+        jLabel1.setForeground(new java.awt.Color(128, 0, 32));
         jLabel1.setText("Modify Appointment");
 
-        jLabel2.setBackground(new java.awt.Color(255, 204, 204));
+        jLabel2.setBackground(new java.awt.Color(245, 233, 211));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 105, 180));
+        jLabel2.setForeground(new java.awt.Color(128, 0, 32));
         //jLabel2.setText("Appointment: Hair Styling | 70 SAR | 40 min | Date: 02-15-2025 | Time 10:00 AM ");
 
         jLabel3.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 105, 180));
+        jLabel3.setForeground(new java.awt.Color(128, 0, 32));
         jLabel3.setText("Choose New Date:");
 
-        jComboBox1.setBackground(new java.awt.Color(255, 105, 180));
+        jComboBox1.setBackground(new java.awt.Color(245, 233, 211));
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setForeground(new java.awt.Color(128, 0, 32));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2025-08-02", "2025-08-06", "2025-08-08" }));
 
         jLabel4.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 105, 180));
+        jLabel4.setForeground(new java.awt.Color(128, 0, 32));
         jLabel4.setText("Choose New Time:");
 
-        jComboBox2.setBackground(new java.awt.Color(255, 105, 180));
+        jComboBox2.setBackground(new java.awt.Color(245, 233, 211));
         jComboBox2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(255, 255, 255));
+        jComboBox2.setForeground(new java.awt.Color(128, 0, 32));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "13:00:00", "14:00:00", "15:00:00" }));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 105, 180));
+        jLabel5.setForeground(new java.awt.Color(128, 0, 32));
         jLabel5.setText("Do you want to modify this appointment?");
 
-        jButton1.setBackground(new java.awt.Color(255, 105, 180));
+        jButton1.setBackground(new java.awt.Color(245, 233, 211));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(128, 0, 32));
         jButton1.setText("Modify Appointment");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -330,3 +330,4 @@ backButton.addActionListener(e -> {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration                   
 }
+
