@@ -22,7 +22,7 @@ public class Appointment2 {
     public String service;
     
     public Appointment2() {
-    // Constructor بدون باراميترات
+    // Constructor 
 }
     
 
