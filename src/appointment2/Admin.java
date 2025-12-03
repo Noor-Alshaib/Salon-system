@@ -47,7 +47,7 @@ public class Admin {
         this.password = password;
     }
         public static void main(String[] args) {
-      Admin a= new Admin("hadeel","eee@333","555555","tttttttttttt");
+      Admin a= new Admin("noor","eee@333","555555","tttttttttttt");
       System.out.print(a);
         };
     }
