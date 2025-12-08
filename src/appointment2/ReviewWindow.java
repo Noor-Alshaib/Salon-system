@@ -16,8 +16,8 @@ import java.util.List;
 
 public class ReviewWindow extends JFrame {
 
-    private static final Color BACKGROUND_COLOR = new Color(245, 233, 211);
-    private static final Color burgundy =new Color(128, 0, 32);
+    private static final Color BACKGROUND_COLOR = new Color(255, 240, 245);
+    private static final Color PINK = new Color(255, 105, 180);
 
     public ReviewWindow(List<Appointment> appointments) {
         setTitle("Pending Appointments");
@@ -28,7 +28,7 @@ public class ReviewWindow extends JFrame {
 
         JLabel title = new JLabel("Your Pending Appointments:");
         title.setFont(new Font("Segoe UI", Font.BOLD, 20));
-        title.setForeground(burgundy);
+        title.setForeground(PINK);
         title.setHorizontalAlignment(SwingConstants.CENTER);
         add(title, BorderLayout.NORTH);
 
@@ -45,7 +45,7 @@ public class ReviewWindow extends JFrame {
         add(new JScrollPane(textArea), BorderLayout.CENTER);
 
         JButton close = new JButton("Close");
-        close.setBackground(burgundy);
+        close.setBackground(PINK);
         close.setForeground(Color.WHITE);
         close.addActionListener(e -> dispose());
 

@@ -16,15 +16,17 @@ import java.awt.*;
 import java.sql.*;
 
 public class ResetPassword {
+
     public static void showResetPasswordPage(String email) {
         JFrame frame = new JFrame("Reset Password");
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(245, 233, 211);
-        Color burgundy = new Color(128, 0, 32);
+        Color backgroundColor = new Color(255, 240, 245);
+        Color pinkText = new Color(255, 105, 180);
         Color whiteText = new Color(255, 255, 255);
+        Color lightPinkBox = new Color(255, 105, 180);
 
         JPanel panel = new JPanel();
         panel.setBackground(backgroundColor);
@@ -32,7 +34,7 @@ public class ResetPassword {
 
         JLabel titleLabel = new JLabel("Reset Your Password");
         titleLabel.setFont(new Font("Times New Roman", Font.BOLD, 30));
-        titleLabel.setForeground(burgundy);
+        titleLabel.setForeground(pinkText);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel formPanel = new JPanel(new GridLayout(2, 2, 10, 20));
@@ -42,12 +44,12 @@ public class ResetPassword {
 
         JLabel newPassLabel = new JLabel("Enter New Password:");
         newPassLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        newPassLabel.setForeground(burgundy);
+        newPassLabel.setForeground(pinkText);
         JPasswordField newPassField = new JPasswordField();
 
         JLabel confirmLabel = new JLabel("Confirm New Password:");
         confirmLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        confirmLabel.setForeground(burgundy);
+        confirmLabel.setForeground(pinkText);
         JPasswordField confirmField = new JPasswordField();
 
         formPanel.add(newPassLabel);
@@ -57,7 +59,7 @@ public class ResetPassword {
 
         JButton resetButton = new JButton("Reset Password");
         resetButton.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        resetButton.setBackground(burgundy);
+        resetButton.setBackground(lightPinkBox);
         resetButton.setForeground(whiteText);
         resetButton.setMaximumSize(new Dimension(180, 40));
         resetButton.setAlignmentX(Component.CENTER_ALIGNMENT);

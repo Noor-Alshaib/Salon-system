@@ -29,7 +29,7 @@ public class CancelAppointment extends javax.swing.JFrame {
      */
    public CancelAppointment() {
         initComponents();
-        getContentPane().setBackground(new Color(245, 233, 211));
+        getContentPane().setBackground(new Color(255, 240, 245));
         setExtendedState(MAXIMIZED_BOTH);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -45,7 +45,7 @@ public class CancelAppointment extends javax.swing.JFrame {
    public CancelAppointment(String user_email, Appointment2 appointment) {
     this.user_Email = user_email;
     initComponents();
-    getContentPane().setBackground(new Color(245, 233, 211));
+    getContentPane().setBackground(new Color(255, 240, 245));
     setExtendedState(MAXIMIZED_BOTH);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setResizable(false);
@@ -85,14 +85,14 @@ public class CancelAppointment extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cancel Appointment");
 
-        jPanel1.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel1.setBackground(new java.awt.Color(255, 240, 245));
         jPanel1.setToolTipText("Cancel Appointment");
 
-        jPanel3.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel3.setBackground(new java.awt.Color(255, 240, 245));
 
-        jButton2.setBackground(new java.awt.Color(245, 233, 211));
+        jButton2.setBackground(new java.awt.Color(255, 105, 180));
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18));
-        jButton2.setForeground(new java.awt.Color(128, 0, 32));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("cancel Appointment");
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -104,14 +104,14 @@ public class CancelAppointment extends javax.swing.JFrame {
 
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(128, 0, 32));
+        jLabel4.setForeground(new java.awt.Color(255, 105, 180));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Are you sure you want to cancel this appointment?");
 
-        jPanel2.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel2.setBackground(new java.awt.Color(251, 191, 225));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(128, 0, 32));
+        jLabel2.setForeground(new java.awt.Color(255, 105, 180));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -131,7 +131,7 @@ public class CancelAppointment extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 40)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(128, 0, 32));
+        jLabel1.setForeground(new java.awt.Color(255, 105, 180));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cancel Appointment");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -171,9 +171,9 @@ public class CancelAppointment extends javax.swing.JFrame {
                 .addGap(28, 28, 28))
         );
 
-        jButton1.setBackground(new java.awt.Color(245, 233, 211));
+        jButton1.setBackground(new java.awt.Color(255, 105, 180));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(128, 0, 32));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

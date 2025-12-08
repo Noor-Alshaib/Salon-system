@@ -20,7 +20,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
  * @author Renaa
  */
 public class MyAppointment2 extends javax.swing.JFrame {
-   private Appointment2 selectedAppointment;
+    private Appointment2 selectedAppointment;
 
     private static String user_Email;
     private Appointment2 appointment;
@@ -42,7 +42,7 @@ public class MyAppointment2 extends javax.swing.JFrame {
         
         appointment = new Appointment2();
         initComponents();
-        getContentPane().setBackground(new Color(245, 233, 211));
+        getContentPane().setBackground(new Color(255, 240, 245));
         setExtendedState(MAXIMIZED_BOTH);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,7 +52,7 @@ public class MyAppointment2 extends javax.swing.JFrame {
     public MyAppointment2(String email) {
     this.email = email;
     initComponents();
-    getContentPane().setBackground(new Color(245, 233, 211));
+    getContentPane().setBackground(new Color(255, 240, 245));
     setExtendedState(MAXIMIZED_BOTH);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setResizable(false);
@@ -147,16 +147,16 @@ private void loadUserAppointments() throws SQLException {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("My Appointments");
 
-        jPanel2.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel2.setBackground(new java.awt.Color(255, 240, 245));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 40)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(128, 0, 32));
+        jLabel1.setForeground(new java.awt.Color(255, 105, 180));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText(" My Appointments");
 
-        jButton2.setBackground(new java.awt.Color(245, 233, 211));
+        jButton2.setBackground(new java.awt.Color(255, 105, 180));
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(128, 0, 32));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Cancel Appointment");
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -166,12 +166,12 @@ private void loadUserAppointments() throws SQLException {
         });
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(128, 0, 32));
+        jLabel4.setForeground(new java.awt.Color(255, 105, 180));
         jLabel4.setText("Modify or Cancel Appointment?");
 
-        jButton1.setBackground(new java.awt.Color(245, 233, 211));
+        jButton1.setBackground(new java.awt.Color(255, 105, 180));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(128, 0, 32));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Modify Appointment");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -180,10 +180,10 @@ private void loadUserAppointments() throws SQLException {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel1.setBackground(new java.awt.Color(251, 191, 225));
 
         jRadioButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(128, 0, 32));
+        jRadioButton2.setForeground(new java.awt.Color(255, 105, 180));
         
         //jRadioButton2.setText("1- Hair Styling | 70 SAR | 40 min | Date: 02-15-2025 | Time 10:00 AM ");
         jRadioButton2.setToolTipText("");
@@ -207,10 +207,10 @@ private void loadUserAppointments() throws SQLException {
                 .addComponent(jRadioButton2))
         );
 
-        jPanel3.setBackground(new java.awt.Color(245, 233, 211));
+        jPanel3.setBackground(new java.awt.Color(251, 191, 225));
 
         jRadioButton3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(128, 0, 32));
+        jRadioButton3.setForeground(new java.awt.Color(255, 105, 180));
         jRadioButton3.setSelected(true);
         //jRadioButton3.setText("2-Nail Design |  60 SAR | 45 min | Date: 12-07-2025 | Time: 12:00 PM");
         
