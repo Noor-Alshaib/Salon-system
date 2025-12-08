@@ -12,22 +12,21 @@ import java.awt.*;
  */
 public class ServicesCatalog extends JFrame {
     private String userEmail;
-    
-    public ServicesCatalog(String userEmail) {
+     public ServicesCatalog(String userEmail) {
         this.userEmail=userEmail;
         
         setTitle("Services Catalog");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
-        getContentPane().setBackground(new Color(255, 240, 245)); 
+        getContentPane().setBackground(new Color(245, 233, 211)); 
         JLabel title = new JLabel("Services Catalog", SwingConstants.CENTER);
         title.setFont(new Font("Times New Roman", Font.BOLD, 47));
-        title.setForeground( new Color(255, 105, 180)); 
+        title.setForeground( new Color(128, 0, 32)); 
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton hairButton = new JButton("Hair Services");
         JButton nailButton = new JButton("Nail Services");
         Font buttonFont = new Font("Times New Roman", Font.BOLD, 36);
-        Color buttonColor = new Color(255, 105, 180);
+        Color buttonColor = new Color(128, 0, 32);
         hairButton.setFont(buttonFont);
         hairButton.setBackground(buttonColor);
         hairButton.setForeground(Color.WHITE);
@@ -63,6 +62,10 @@ public class ServicesCatalog extends JFrame {
         add(panel);
         setVisible(true);
     }
-
+public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new ServicesCatalog(null).setVisible(true);
+        });
+    }
 
 }

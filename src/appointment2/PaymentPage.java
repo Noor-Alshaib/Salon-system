@@ -19,8 +19,8 @@ import java.util.List;
 
 public class PaymentPage extends JFrame {
 
-    private final Color backgroundColor = new Color(255, 240, 245);
-    private final Color pinkText = new Color(255, 105, 180);
+    private final Color backgroundColor = new Color(245, 233, 211);
+    private final Color burgundy = new Color(128, 0, 32);
     private final Color whiteText = new Color(255, 255, 255);
     private static final String DB_URL = "jdbc:mysql://localhost:3306/salonsystem";
     private static final String DB_USER = "root";
@@ -41,7 +41,7 @@ public class PaymentPage extends JFrame {
 
         JLabel title = new JLabel("Review and Confirm Your Appointments");
         title.setFont(new Font("Segoe UI", Font.BOLD, 30));
-        title.setForeground(pinkText);
+        title.setForeground(burgundy);
         title.setHorizontalAlignment(SwingConstants.CENTER);
         title.setBorder(BorderFactory.createEmptyBorder(20, 0, 10, 0));
         add(title, BorderLayout.NORTH);
@@ -89,8 +89,8 @@ public class PaymentPage extends JFrame {
 
         cashRadio.setBackground(backgroundColor);
         cardRadio.setBackground(backgroundColor);
-        cashRadio.setForeground(pinkText);
-        cardRadio.setForeground(pinkText);
+        cashRadio.setForeground(burgundy);
+        cardRadio.setForeground(burgundy);
         cashRadio.setFont(new Font("Segoe UI", Font.PLAIN, 16));
         cardRadio.setFont(new Font("Segoe UI", Font.PLAIN, 16));
 
@@ -149,7 +149,7 @@ public class PaymentPage extends JFrame {
 
         JButton confirm = new JButton("Confirm Payment");
         confirm.setFont(new Font("Segoe UI", Font.BOLD, 18));
-        confirm.setBackground(pinkText);
+        confirm.setBackground(burgundy);
         confirm.setForeground(whiteText);
         confirm.setPreferredSize(new Dimension(220, 50));
         confirm.setFocusPainted(false);
@@ -194,7 +194,7 @@ public class PaymentPage extends JFrame {
         add(bottom, BorderLayout.SOUTH);
         JButton backButton = new JButton("← Back to Dashboard");
         backButton.setFont(new Font("Arial", Font.PLAIN, 12));
-        backButton.setForeground(pinkText);
+        backButton.setForeground(burgundy);
         backButton.setBackground(Color.WHITE);
         backButton.setFocusPainted(false);
         backButton.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
@@ -254,10 +254,11 @@ public class PaymentPage extends JFrame {
 
     private void savePaymentToDB(String status, double amount) {
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
+            int appointment_id =2 ;
             String sql = "INSERT INTO Payment (user_email, appointment_id, amount, payment_status) VALUES (?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, userEmail);
-            ps.setInt(2, 1); // FIXME: Replace this with real appointment ID if available
+            ps.setInt(2, appointment_id); // FIXME: Replace this with real appointment ID if available
             ps.setDouble(3, amount);
             ps.setString(4, status);
             ps.executeUpdate();

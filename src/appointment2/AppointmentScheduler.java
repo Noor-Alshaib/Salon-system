@@ -31,7 +31,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class AppointmentScheduler extends JFrame {
 
-    private final List<Appointment> pendingAppointments = new ArrayList<>();
+     private final List<Appointment> pendingAppointments = new ArrayList<>();
     private final String userEmail;
     private LocalDate selectedDate;
     private String selectedPeriod;
@@ -39,8 +39,8 @@ public class AppointmentScheduler extends JFrame {
     private final JPanel calendarPanel = new JPanel(new GridLayout(0, 7, 10, 10));
     private final JComboBox<String> serviceComboBox = new JComboBox<>();
 
-    private static final Color BACKGROUND_COLOR = new Color(255, 240, 245);
-    private static final Color PINK = new Color(255, 105, 180);
+    private static final Color BACKGROUND_COLOR = new Color(245, 233, 211); 
+    private static final Color  burgundy = new Color(128, 0, 32); 
     private static final Color WHITE = Color.WHITE;
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/salonsystem";
@@ -65,7 +65,7 @@ public class AppointmentScheduler extends JFrame {
 
         JButton backButton = new JButton("← Back to Dashboard");
         backButton.setFont(new Font("Arial", Font.PLAIN, 12));
-        backButton.setForeground(PINK);
+        backButton.setForeground(burgundy);
         backButton.setBackground(Color.WHITE);
         backButton.setFocusPainted(false);
         backButton.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
@@ -98,7 +98,7 @@ public class AppointmentScheduler extends JFrame {
     private JLabel createTitle() {
         JLabel title = new JLabel("Pick a Service and Date", SwingConstants.CENTER);
         title.setFont(new Font("Segoe UI", Font.BOLD, 30));
-        title.setForeground(PINK);
+        title.setForeground(burgundy);
         return title;
     }
 
@@ -107,7 +107,7 @@ public class AppointmentScheduler extends JFrame {
         dynamicPanel.setBackground(BACKGROUND_COLOR);
 
         serviceComboBox.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-        serviceComboBox.setBackground(PINK);
+        serviceComboBox.setBackground(burgundy);
         serviceComboBox.setForeground(WHITE);
         serviceComboBox.setMaximumSize(new Dimension(250, 30));
         serviceComboBox.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -146,7 +146,7 @@ public class AppointmentScheduler extends JFrame {
         String[] days = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
         for (String day : days) {
             JLabel label = new JLabel(day, SwingConstants.CENTER);
-            label.setForeground(PINK);
+            label.setForeground(burgundy);
             calendarPanel.add(label);
         }
 
@@ -180,7 +180,7 @@ public class AppointmentScheduler extends JFrame {
         wrapper.setBackground(BACKGROUND_COLOR);
 
         JLabel label = new JLabel("Select time for " + date);
-        label.setForeground(PINK);
+        label.setForeground(burgundy);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
         wrapper.add(label);
 
@@ -207,7 +207,7 @@ public class AppointmentScheduler extends JFrame {
         slotPanel.setBackground(BACKGROUND_COLOR);
 
         JLabel label = new JLabel("Select time - " + period + " on " + selectedDate);
-        label.setForeground(PINK);
+        label.setForeground(burgundy);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
         slotPanel.add(label);
 
@@ -283,7 +283,7 @@ public class AppointmentScheduler extends JFrame {
 
     private JButton createButton(String text, java.awt.event.ActionListener action) {
         JButton button = new JButton(text);
-        button.setBackground(PINK);
+        button.setBackground(burgundy);
         button.setForeground(WHITE);
         button.addActionListener(action);
         return button;
