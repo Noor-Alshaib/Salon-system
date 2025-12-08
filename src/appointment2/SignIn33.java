@@ -31,7 +31,7 @@ public class SignIn33 extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setResizable(false);
-        getContentPane().setBackground(new Color(255, 240, 245));
+        getContentPane().setBackground(new Color(245, 233, 211));
         setLayout(null);
         setVisible(true);
 
@@ -46,14 +46,14 @@ public class SignIn33 extends JFrame {
         
         titleLabel = new JLabel("Glow Starts Here");
         titleLabel.setFont(new Font("Times New Roman", Font.BOLD, 40));
-        titleLabel.setForeground(new Color(255, 105, 180));
+        titleLabel.setForeground(new Color(128, 0, 32));
         titleLabel.setBounds(centerX - 120, 100, 400, 50);
         add(titleLabel);
 
         
         nameLabel = new JLabel("Name:");
         nameLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        nameLabel.setForeground(new Color(255, 105, 180));
+        nameLabel.setForeground(new Color(128, 0, 32));
         nameLabel.setBounds(centerX - labelWidth, startY, labelWidth, 30);
         add(nameLabel);
 
@@ -64,7 +64,7 @@ public class SignIn33 extends JFrame {
         
         emailLabel = new JLabel("Email:");
         emailLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        emailLabel.setForeground(new Color(255, 105, 180));
+        emailLabel.setForeground(new Color(128, 0, 32));
         emailLabel.setBounds(centerX - labelWidth, startY + gapY, labelWidth, 30);
         add(emailLabel);
 
@@ -75,7 +75,7 @@ public class SignIn33 extends JFrame {
         
         phoneLabel = new JLabel("Phone:");
         phoneLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        phoneLabel.setForeground(new Color(255, 105, 180));
+        phoneLabel.setForeground(new Color(128, 0, 32));
         phoneLabel.setBounds(centerX - labelWidth, startY + 2 * gapY, labelWidth, 30);
         add(phoneLabel);
 
@@ -86,7 +86,7 @@ public class SignIn33 extends JFrame {
         
         passwordLabel = new JLabel("Password:");
         passwordLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        passwordLabel.setForeground(new Color(255, 105, 180));
+        passwordLabel.setForeground(new Color(128, 0, 32));
         passwordLabel.setBounds(centerX - labelWidth, startY + 3 * gapY, labelWidth, 30);
         add(passwordLabel);
 
@@ -97,7 +97,7 @@ public class SignIn33 extends JFrame {
         
         confirmPasswordLabel = new JLabel("Confirm Password:");
         confirmPasswordLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-        confirmPasswordLabel.setForeground(new Color(255, 105, 180));
+        confirmPasswordLabel.setForeground(new Color(128, 0, 32));
         confirmPasswordLabel.setBounds(centerX - labelWidth - 30, startY + 4 * gapY, labelWidth + 50, 30);
         add(confirmPasswordLabel);
 
@@ -109,7 +109,7 @@ public class SignIn33 extends JFrame {
         signInButton = new JButton("Sign Up");
         signInButton.setFont(new Font("Times New Roman", Font.BOLD, 24));
         signInButton.setForeground(Color.WHITE);
-        signInButton.setBackground(new Color(255, 105, 180));
+        signInButton.setBackground(new Color(128, 0, 32));
         signInButton.setBounds(centerX, startY + 5 * gapY + 30, 150, 50);
         add(signInButton);
 
@@ -162,10 +162,10 @@ public class SignIn33 extends JFrame {
     new Dashboard(user.getName()).setVisible(true); 
 this.dispose();
 }
-//    public static void main(String[] args) {
-//        SwingUtilities.invokeLater(() -> {
-//            new SignIn33().setVisible(true);
-//        });
-//    }
+    public static void main(String[] args) {
+      SwingUtilities.invokeLater(() -> {
+           new SignIn33().setVisible(true);
+        });
+    }
     
 }
