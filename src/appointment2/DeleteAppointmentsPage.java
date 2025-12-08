@@ -19,19 +19,18 @@ public class DeleteAppointmentsPage extends JFrame {
     private DefaultTableModel model;
 
     public DeleteAppointmentsPage() {
-        setTitle("Delete Appointments");
+         setTitle("Delete Appointments");
         setSize(800, 400);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        getContentPane().setBackground(new Color(255, 240, 245));
+        getContentPane().setBackground(new Color(245, 233, 211));
 
         model = new DefaultTableModel(new String[]{"ID", "Customer Email", "Date", "Time", "Service"}, 0);
         table = new JTable(model);
-
         JScrollPane scrollPane = new JScrollPane(table);
         JButton deleteButton = new JButton("Delete Selected Appointment");
 
-        deleteButton.setBackground(new Color(255, 105, 180));
+        deleteButton.setBackground(new Color(128, 0, 32));
         deleteButton.setForeground(Color.WHITE);
         deleteButton.setFont(new Font("Arial", Font.BOLD, 16));
 
@@ -96,3 +95,4 @@ public class DeleteAppointmentsPage extends JFrame {
         });
      }
 }
+ 

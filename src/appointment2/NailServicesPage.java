@@ -14,7 +14,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class NailServicesPage {
-    
+       
     public static String userEmail = "";
     
     public static void main(String[] args) {
@@ -23,11 +23,10 @@ public class NailServicesPage {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
-        Color backgroundColor = new Color(255, 240, 245);
-        Color pinkText = new Color(255, 105, 180);
+        Color backgroundColor = new Color(245, 233, 211);
+        Color burgundy = new Color(128, 0, 32);
         Color whiteText = new Color(255 , 255 , 255);
-        Color lightPinkBox = new Color(255, 105, 180);
-        Color lightPinkBox2 = new Color(255, 185, 215);
+        Color lightBox = new Color(190, 170, 140);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setBackground(backgroundColor);
@@ -35,7 +34,7 @@ public class NailServicesPage {
 
         JLabel title = new JLabel("Nail Services");
         title.setFont(new Font("Times New Roman", Font.BOLD, 45));
-        title.setForeground(pinkText);
+        title.setForeground(burgundy);
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         mainPanel.add(Box.createVerticalStrut(40));
         mainPanel.add(title);
@@ -51,13 +50,13 @@ public class NailServicesPage {
 
         for (String service : services) {
             JPanel servicePanel = new JPanel();
-            servicePanel.setBackground(lightPinkBox2);
+            servicePanel.setBackground(lightBox);
             servicePanel.setMaximumSize(new Dimension(400, 40));
             servicePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
             JLabel label = new JLabel(service);
             label.setFont(new Font("Times New Roman", Font.BOLD, 20));
-            label.setForeground(pinkText);
+            label.setForeground(burgundy);
 
             servicePanel.add(label);
             mainPanel.add(servicePanel);
@@ -66,7 +65,7 @@ public class NailServicesPage {
 
         JLabel questionLabel = new JLabel("Would you like to book an appointment?");
         questionLabel.setFont(new Font("Times New Roman", Font.BOLD, 22));
-        questionLabel.setForeground(pinkText);
+        questionLabel.setForeground(burgundy);
         questionLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JPanel buttonPanel = new JPanel();
@@ -74,7 +73,7 @@ public class NailServicesPage {
 
         JButton yesButton = new JButton("Yes");
         yesButton.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        yesButton.setBackground(lightPinkBox);
+        yesButton.setBackground(burgundy);
         yesButton.setForeground(whiteText);
         yesButton.addActionListener(e -> {
         new AppointmentScheduler(userEmail);
@@ -87,7 +86,7 @@ public class NailServicesPage {
         frame.dispose();
         });
         noButton.setFont(new Font("Times New Roman", Font.BOLD, 18));
-        noButton.setBackground(lightPinkBox);
+        noButton.setBackground(burgundy);
         noButton.setForeground(whiteText);
 
         buttonPanel.add(yesButton);
