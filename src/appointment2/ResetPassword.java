@@ -6,11 +6,6 @@ package appointment2;
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
-
-/**
- *
- * @author Renaa
- */
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
