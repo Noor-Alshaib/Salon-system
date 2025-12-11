@@ -7,11 +7,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.util.List;
-
-/**
- *
- * @author Renaa
- */
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
